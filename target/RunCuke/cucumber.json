@@ -1,0 +1,87 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8835326600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "User should Navigate to Women Category Page Successfully",
+        "description": "",
+        "id": "women-category-page-functionality;user-should-navigate-to-women-category-page-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 1264461800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 129475200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on homepage",
+            "match": {
+              "location": "SignInStep.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4131724800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user click on women\u0027s link",
+            "match": {
+              "location": "WomanCategorySteps.userClickOnWomenSLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6855008000,
+              "error_message": "java.lang.ClassCastException: com.sun.proxy.$Proxy22 cannot be cast to org.openqa.selenium.By\r\n\tat com.automationpractice.pages.WomenCategoryPage.verifyWomenText(WomenCategoryPage.java:36)\r\n\tat com.automationpractice.cucumber.steps.WomanCategorySteps.userShouldBeNavigatedToWomenSPage(WomanCategorySteps.java:20)\r\n\tat ✽.Then user should be navigated to Women\u0027s  page(WomenCategoryPage.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "user should be navigated to Women\u0027s  page",
+            "match": {
+              "location": "WomanCategorySteps.userShouldBeNavigatedToWomenSPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Women Category Page Functionality",
+    "description": "",
+    "id": "women-category-page-functionality",
+    "keyword": "Feature",
+    "uri": "WomenCategoryPage.feature"
+  }
+]
